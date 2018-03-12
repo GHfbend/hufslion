@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+  <body class="bg-light-gray" >
+    <div id="bodys" class="bg-light-gray text-center">
+      <div id="contentss">
+        <!--<p class="text-muted"> 본 서비스는 모바일 최적화되어있습니다</p>-->
+        <section>
+          <%= yield %>
+        </section>
+        
+      </div>
+      <!--<div  class="text-center">-->
+      <!--<a id="footers"href="/info" class="copyright text-muted">개발자 정보 / 오류 건의</a><br>-->
+      <!--<a id="footers"href="https://www.facebook.com/hufsglobal.likelion/"><span class="copyright text-muted">develop by LIKELION x HUFS global</span></a>-->
+      <!--    </div>-->
+    </div>
+    
+  </body>
+</html>
+<style>
+.horizon1{ display: table; margin-left: auto; margin-right: auto; display: inline-block; }
+.horizon{ display: table; margin-left: auto; margin-right: auto; }
+#bodys{  margin: 0;}
+
+#contentss{ min-height: calc(100vh - 20px);}
+
+#footers {
+  height: 10px;
+}
+</style>
