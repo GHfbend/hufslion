@@ -1,45 +1,47 @@
+// application.html.erb CSS file
 @import "variables.scss";
 @import "mixins.scss";
 
+  .navbar-center {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
 .text-center {
   text-align: center;
 }
+
+.text-muted {
+    color: $gray-light;
+}
+
 html,
-
 body {
-
     margin: 0;
-
     padding: 0;
-
     height: 100%;
-
 }
 
 #wrapper {
-
 	position: relative;
-
     min-height: 100%;
-
 }
 
 #header {
-
 	height: 50px;
     line-height: 50px;
     // background: #ccc;
-
 }
 
 #container {
-
     padding: 10px;
-
+    margin-top: 100px;
 }
 
 #footer {
-
     vertical-align: middle;
     // position: absolute;
     // position: fixed;
@@ -48,11 +50,18 @@ body {
     width: 100%;
     height: 70px;   
     line-height: 70px;
-
 }
 
-.text-muted {
-    color: $gray-light;
+.copyright {
+        line-height: 40px;
+        @include heading-font;
+        text-transform: none;
+}
+
+
+.my-image {
+    width: 150px;
+    height: 150px;
 }
 
 .section-subheading {
@@ -63,14 +72,4 @@ body {
         font-weight: 400;
         margin-bottom: 75px;
         background-color: white;
-    }
-.copyright {
-        line-height: 40px;
-        @include heading-font;
-        text-transform: none;
-    }
-    
-.my-image {
-    width: 230px;
-    height: auto;
 }

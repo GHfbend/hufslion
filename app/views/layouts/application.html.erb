@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>hufslion 6th</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -12,20 +15,48 @@
    
 
 </head>
-
-<body class="bg-light-gray">
+<body class="bg-light-gray text-center text-muted">
+<nav id="mainNav" class=" bg-light-gray navbar navbar-default navbar-fixed-top">
   <div id="wrapper">
-    <div id="header" class="text-center text-muted">
-      본 서비스는 모바일 최적화되어있습니다.
+    <div id="header text-center">
+      <h2 class="section-heading text-center">likelion 6th</h2>
     </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse text-center" id="bs-navbar-collapse">
+      <ul class="navbar-center">
+        <li>
+          <a href="/"><h3 class="section-heading">member</h3></a>
+        </li>
+        &nbsp
+        <li>
+          <a href="/calendar"><h3 class="section-heading">project</h3></a>
+        </li>
+        &nbsp
+        <li>
+          <a href="/calendar2"><h3 class="section-heading">Univ</h3></a>
+        </li>
+        &nbsp
+        <li>
+          <a href="/sponsors"><h3 class="section-heading">contact</h3></a>
+        </li>
+        <!--<li>-->
+        <!--  <a href="/index1"><h3 class="section-heading">sponsor</h3></a>-->
+        <!--</li>-->
+      </ul>
+    </div>
+            <!-- /.navbar-collapse -->
+  </div>
+        <!-- /.container-fluid -->
+</nav>
+
+  
     <div id="container">
       <%= yield %>
 	  </div>
-    <div id="footer" class="text-center text-muted">
-      <a href="http://member.hufslion.info/developer" class="">개발자 정보</a>
+    <div id="footer" >
+      <a href="/developer">개발자 정보</a>
       <span class="copyright">developed by LIKELION x HUFS global</span><br>
     </div>
   </div>
 </body>
-</html><!--/*.horizon1{ display: table; margin-left: auto; margin-right: auto; display: inline-block; }*/-->
-<!--/*.horizon{ display: table; margin-left: auto; margin-right: auto; }*/-->
+</html>
