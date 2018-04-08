@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get '/gonggu' =>'gonggu#gonggu'
   # get '/developer' => 'home#info'
   # get '/contact' => 'home#contact'
-  # get '/' => 'home#index'
+  get '/' => 'home#sorry'
   get '*path' => redirect('/sorry') 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
