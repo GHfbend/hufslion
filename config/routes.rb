@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  root 'home#index'
-  get '/index' => 'home#index'
+  # root 'home#index'
+  # get '/index' => 'home#index'
   get '/sorry' =>'home#sorry'
   get '/gonggu' =>'gonggu#gonggu'
-  get '/developer' => 'home#info'
-  get '/contact' => 'home#contact'
-  get '/' => 'home#index'
+  # get '/developer' => 'home#info'
+  # get '/contact' => 'home#contact'
+  # get '/' => 'home#index'
   get '*path' => redirect('/sorry') 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
