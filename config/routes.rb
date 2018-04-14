@@ -13,6 +13,14 @@ Rails.application.routes.draw do
   get '/seungyun', :to => redirect('/seungyun.html')
   get '/seokwon', :to => redirect('/Hamseokwon.html')
   get '/hyunwoo', :to => redirect('/Hyunwoo.html')
+  # 태훈 라우트 
+  get '/about_T1', :to => redirect('/about_T1.html')
+  get '/contact_T1', :to => redirect('/contact_T1.html')
+  get '/favorites_T1', :to => redirect('/favorites_T1.html')
+  get '/favorites-detail_T1', :to => redirect('/favorites-detail_T1.html')
+  get '/index_T1', :to => redirect('/index_T1.html')
+  get '/pixelart_T1', :to => redirect('/pixelart_T1.html')
+  get '/trailers_T1', :to => redirect('/trailers_T1.html')
   get '*path' => redirect('/sorry') 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
