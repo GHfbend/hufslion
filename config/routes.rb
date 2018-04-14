@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get '/contact_T1', :to => redirect('/contact_T1.html')
   get '/favorites_T1', :to => redirect('/favorites_T1.html')
   get '/favorites-detail_T1', :to => redirect('/favorites-detail_T1.html')
-  get '/Teuno', :to => redirect('/index_T1.html')
+  get '/Teuno', :to => redirect('/Teuno.html')
   get '/pixelart_T1', :to => redirect('/pixelart_T1.html')
   get '/trailers_T1', :to => redirect('/trailers_T1.html')
   get '*path' => redirect('/sorry') 
