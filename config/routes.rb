@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/sangwon', :to => redirect('/sangwon.html')
   get '/seungyun', :to => redirect('/seungyun.html')
   get '/seokwon', :to => redirect('/Hamseokwon.html')
+  get '/hyunwoo', :to => redirect('/Hyunwoo.html')
   get '*path' => redirect('/sorry') 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
