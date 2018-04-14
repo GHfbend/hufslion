@@ -33,9 +33,11 @@ Rails.application.routes.draw do
   get '/leeseul', :to => redirect('/leeseul.html')
   # 10. 김은진
   get '/eunjin', :to => redirect('/index_eunjin.html')
-  # 11.
-  get '/', :to => redirect('/.html')
-  
+  # 11. 효진
+  get '/hyojin', :to => redirect('/hyojin.html')
+  get '/hyojin-slide', :to => redirect('/index-slide.html')
+  # 12. 혜빈
+  get '/hbkim', :to => redirect('/hbkim.html')
   # 라우트 리다이렉트 
   get '*path' => redirect('/sorry') 
   # The priority is based upon order of creation: first created -> highest priority.
