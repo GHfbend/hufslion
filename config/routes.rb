@@ -34,8 +34,7 @@ Rails.application.routes.draw do
   # 10. 김은진
   get '/eunjin', :to => redirect('/index_eunjin.html')
   # 11. 효진
-  get '/hyojin', :to => redirect('/hyojin.html')
-  get '/hyojin-slide', :to => redirect('/index-slide.html')
+  get '/hyojin', :to => redirect('/index-slide.html')
   # 12. 혜빈
   get '/hbkim', :to => redirect('/hbkim.html')
   # 라우트 리다이렉트 
