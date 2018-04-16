@@ -5,4 +5,6 @@ class HomeController < ApplicationController
   end
   def gonggu
   end
+  def member
+  end
 end

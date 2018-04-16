@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # get '/developer' => 'home#info'
   # get '/contact' => 'home#contact'
   get '/' => 'home#sorry'
+  get '/member' => 'home#member'
   # 자기소개 페이지 
   # 1. 인건
   get '/inkun', :to => redirect('/inkun.html')
